@@ -1,6 +1,5 @@
 import asyncio
 from random import random
-from tkinter.font import names
 import random
 
 
@@ -50,10 +49,6 @@ async def unknown_command_handler(message: types.Message):
         await message.answer("Извините пока что я не умею отвечать на такие команды попроьбуйте:/random,/start,/minfo")
     else:
         await message.answer(message.text)
-
-@dp.message()
-async def echo_handler(message: types.Message):
-    await message.answer(message.text)
 
 
 async def main():
