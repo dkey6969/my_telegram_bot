@@ -51,7 +51,6 @@ async def unknown_command_handler(message: types.Message):
         await message.answer(message.text)
 
 
-
 async def main():
     await dp.start_polling(bot)
 
